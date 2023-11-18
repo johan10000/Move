@@ -1,10 +1,10 @@
 # Move
 
-Installation:
+Installation Steps:
 
-  Step 1: Have the latest version of Rust installed.
-  Step 2: Refer to Step0 of https://github.com/move-language/move/tree/main/language/documentation/tutorial#step-0-installation
-  Step 3: Run the program as mentioned in the tutorial https://www.youtube.com/watch?v=jeaEPNxSun0&list=PLCehwWkztHkJxLLleH1OXojVgldJ4OXoC&index=1
+  1. Have the latest version of Rust installed.
+  2. Refer to Step0 of https://github.com/move-language/move/tree/main/language/documentation/tutorial#step-0-installation
+  3. Run the program as mentioned in the tutorial https://www.youtube.com/watch?v=jeaEPNxSun0&list=PLCehwWkztHkJxLLleH1OXojVgldJ4OXoC&index=1
 
 Details:
 
