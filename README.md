@@ -26,3 +26,14 @@ Types of programs in Move: There are only 2 types of programs in Move:
 
   1. Modules
   2. Scripts
+
+Move coding conventions:
+
+  1. Module names: should be lower snake case, e.g., fixed_point32, vector.
+  2. Type names: should be camel case if they are not a native type, e.g., Coin, RoleId.
+  3. Function names: should be lower snake case, e.g., destroy_empty.
+  4. Constant names: should be upper camel case and begin with an E if they represent error codes (e.g., EIndexOutOfBounds) and upper snake case if they represent a non-error value (e.g., MIN_STAKE).
+  5. Generic type names: should be descriptive, or anti-descriptive where appropriate, e.g., T or Element for the Vector generic type parameter. Most of the time the "main" type in a module should be the same name as the module e.g., option::Option, fixed_point32::FixedPoint32.
+  6. Module file names: should be the same as the module name e.g., Option.move.
+  7. Script file names: should be lower snake case and should match the name of the “main” function in the script.
+  8. Mixed file names: If the file contains multiple modules and/or scripts, the file name should be lower snake case, where the name does not match any particular module/script inside.
