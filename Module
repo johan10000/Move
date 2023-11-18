@@ -1,9 +1,19 @@
-Definition: Piece of code that is published by a specific account to run on-chain(more or less, a smart contract)
+* Definition: A piece of code that is published by a specific account to run on-chain(more or less, a smart contract)
 
-How to write a module:
+* Properties:
+
+  1. Stored in global storage.
+  2. Typically, module names start with a lowercase letter.
+  3. All elements inside a module block can appear in any order.
+  4. Fundamentally, a module is a collection of types and functions.
+
+* Syntax: How to write a module:
 
 module 0x42 SocialNetwork{
 }
 
 0x42: The address (When we are running locally, it can be anything)
+
 SocialNetwork: The name of the module (it can be anything)
+
+Hence, The module 0x42::SocialNetwork part specifies that the module SocialNetwork will be published under the account address 0x42 in global storage.
