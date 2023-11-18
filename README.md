@@ -43,6 +43,44 @@ Move coding conventions:
     1. Functions should be imported and used fully qualified from the module in which they are declared, and not imported at the top level.
     2. Types should be imported at the top-level. Where there are name clashes, as should be used to rename the type locally as appropriate.
 
+    For example, if there is a module:
+
+
+module 0x1::foo {
+    struct Foo { }
+    const CONST_FOO: u64 = 0;
+    public fun do_foo(): Foo { Foo{} }
+    ...
+}
+this would be imported and used as:
+
+
+module 0x1::bar {
+    use 0x1::foo::{Self, Foo};
+
+    public fun do_bar(x: u64): Foo {
+        if (x == 10) {
+            foo::do_foo()
+        } else {
+            abort 0
+        }
+    }
+    ...
+}
+And, if there is a local name-clash when importing two modules:
+
+
+module other_foo {
+    struct Foo {}
+    ...
+}
+
+module 0x1::importer {
+    use 0x1::other_foo::Foo as OtherFoo;
+    use 0x1::foo::Foo;
+    ...
+}
+
   * Comments:
 
     1. Each module, struct, and public function declaration should be commented.
