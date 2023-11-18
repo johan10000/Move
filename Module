@@ -3,10 +3,11 @@
 * Properties:
 
   1. Stored in global storage.
-  2. Typically, module names start with a lowercase letter.
-  3. All elements inside a module block can appear in any order.
-  4. Fundamentally, a module is a collection of types and functions.
-  5. Modules are actually libraries that define structs and functions
+  2. Module names can start with letters a to z or letters A to Z. After the first character, module names can contain underscores _, letters a to z, letters A to Z, or digits 0 to 9.
+  3. Typically, module names start with a lowercase letter.
+  4. All elements inside a module block can appear in any order.
+  5. Fundamentally, a module is a collection of types and functions.
+  6. Modules are actually libraries that is a collection of types and functions
 
 * Syntax: How to write a module:
 
