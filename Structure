@@ -1,1 +1,1 @@
-
+ Struct types define the schema of Move's global storage, and module functions define the rules for updating storage. 
