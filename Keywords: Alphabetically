@@ -1,0 +1,8 @@
+
+const: defines private constants that can be used in the functions of a module.
+drop:
+friend: specifies a list of trusted modules
+has:
+key: 
+store:
+use: To import types from other modules.
