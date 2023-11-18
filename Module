@@ -8,7 +8,8 @@
   4. Good Practice: Module names: should be lower snake case, e.g., fixed_point32, vector.
   5. Good Practice: Module file names: should be the same as the module name e.g., Option.move.
   6. Good Practice: All module use statements should be at the top of the module.
-  7. All elements inside a module block can appear in any order.
+  7. Good Practice: Structs and constants should be declared before all functions in a module.
+  8. All elements inside a module block can appear in any order.
 
 * Syntax: How to write a module:
 
