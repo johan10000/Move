@@ -52,4 +52,3 @@ Move coding conventions:
 
     1. Four space indentations should be used except for script and address blocks whose contents should not be indented.
     2. Lines should be broken if they are longer than 100 characters.
-    3. Structs and constants should be declared before all functions in a module.
