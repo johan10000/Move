@@ -1,13 +1,14 @@
-* Definition: A piece of code that is published by a specific account to run on-chain(more or less, a smart contract)
+* Definition: A piece of code that is published by a specific account to run on-chain(more or less, a smart contract). Modules are actually libraries that is a collection of types and function
 
 * Properties:
 
   1. Stored in global storage.
   2. Module names can start with letters a to z or letters A to Z. After the first character, module names can contain underscores _, letters a to z, letters A to Z, or digits 0 to 9.
-  3. Typically, module names start with a lowercase letter.
-  4. All elements inside a module block can appear in any order.
-  5. Fundamentally, a module is a collection of types and functions.
-  6. Modules are actually libraries that is a collection of types and functions
+  3. Good Practice: Typically, module names should start with a lowercase letter.
+  4. Good Practice: Module names: should be lower snake case, e.g., fixed_point32, vector.
+  5. Good Practice: Module file names: should be the same as the module name e.g., Option.move.
+  6. Good Practice: All module use statements should be at the top of the module.
+  7. All elements inside a module block can appear in any order.
 
 * Syntax: How to write a module:
 
