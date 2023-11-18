@@ -1,0 +1,9 @@
+Definition: Piece of code that is published by a specific account to run on-chain(more or less, a smart contract)
+
+How to write a module:
+
+module 0x42 SocialNetwork{
+}
+
+0x42: The address (When we are running locally, it can be anything)
+SocialNetwork: The name of the module (it can be anything)
