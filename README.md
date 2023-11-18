@@ -14,3 +14,8 @@ Details:
   4. Interpreted language.
   5. Statically typed language: Have to declare the type of each variable.
   6. 
+
+Types of programs in Move: There are only 2 types of programs in move:
+
+  1. Modules
+  2. Scripts
