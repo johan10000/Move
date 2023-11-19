@@ -45,3 +45,7 @@
     5. \0	Null
     6. \"	Quote
     7. \xHH	Hex escape, inserts the hex byte sequence HH
+
+* Operations:
+
+    1. 
