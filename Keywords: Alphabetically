@@ -1,8 +1,10 @@
 
 const: defines private constants that can be used in the functions of a module.
-drop:
+drop: specifies this item is delete-able
 friend: specifies a list of trusted modules
-has:
+has: specifies the list of keywords applicable
 key: 
-store:
+&mut: specifies that this reference is a mutable reference
+public: can be called by anyone
+store: gives the ability to be able to be stored on global storage
 use: To import types from other modules.
