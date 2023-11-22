@@ -1,0 +1,23 @@
+1. Both the equal (==) and not-equal (!=) operations only work if both operands are the same type:
+
+      0 == 0; // `true`
+      1u128 == 2u128; // `false`
+      b"hello" != x"00"; // `true`
+
+   If the operands have different types, there is a type checking error:
+
+      1u8 == 1u128; // ERROR! //     ^^^^^ expected an argument of type 'u8'
+      b"" != 0; // ERROR //     ^ expected an argument of type 'vector<u8>'
+
+2. When comparing references, the type of the reference (immutable or mutable) does not matter. But again, the underlying type must be the same type:
+
+    let i = &0;
+    let m = &mut 1;
+
+    i == m; // `false`
+    m == i; // `false`
+    m == m; // `true`
+    i == i; // `true`
+    let i = &0;
+    let s = &b"";
+    i == s; // ERROR! //   ^ expected an argument of type '&u64'
