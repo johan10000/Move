@@ -3,3 +3,14 @@ Smart Contract safety is very important.
 100M+ hacks are a routine!!
 
 Hence safer smart contract languages, advanced testing, analysis and verification tools are very important.
+
+In other SC languages:
+
+1. We cannot pass an asset as an argument to a function
+2. We cannot return an asset from a function
+3. We cannot store an asset in a data structure
+4. We cannot let a callee function temporarily borrow an asset
+5. We cannot declare an asset in Contract 1 and let it be used by Contract 2
+6. We cannot take an asset outside the contract that created it (it is trapped forever in the hash table defining the contract)
+
+We can do all these in Move
