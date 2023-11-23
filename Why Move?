@@ -14,3 +14,5 @@ In other SC languages:
 6. We cannot take an asset outside the contract that created it (it is trapped forever in the hash table defining the contract)
 
 We can do all these in Move
+
+Also, the 2 fundamental blocks of a SC(assets and ownership), there is no vocabulary to define them in other languages. But move has.
