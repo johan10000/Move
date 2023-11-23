@@ -1,0 +1,14 @@
+SC are not conventional programs. We don't use them to write compilers, or operating systems.
+
+They really do just 3 things:
+
+1. Define new types of assets
+2. Define some policies for reading, writing and trasnferring these assets: ownership
+3. Check control policies: Who is allowed to touch/access these assets
+
+So, what we really need in the SCs to be safe are:
+
+1. Language support that gives us safe abstractions for the custom assets, ownership and access control
+2. Strong isolation: writing safe open source code. This code we know will directly interact with attacker's code as we can't hide our SC due to it's trasnparent policy behind a firewall.
+
+This is why SCs are not available by conventional languages
