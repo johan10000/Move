@@ -1,0 +1,9 @@
+1.
+
+&T: Can only read T (Immutable reference to T)
+&mut T: Can read and write T (Mutable reference to T)
+T: Can read, write and move(transfer) T
+
+2. Structs and data structures cannot contain references
+
+3. No references to references (&&T)
