@@ -1,4 +1,8 @@
-* Definition: A piece of code that is published by a specific account to run on-chain(more or less, a smart contract). Modules are actually libraries that is a collection of types and function
+* Definition: 
+
+  A piece of code that is published by a specific account to run on-chain(more or less, a smart contract). 
+  Modules are actually libraries that are a collection of types(structs, constants) and function
+  They are the minimal unit of code abstraction
 
 * Properties:
 
@@ -21,3 +25,19 @@ module 0x42 SocialNetwork{
 SocialNetwork: The name of the module (it can be anything)
 
 Hence, The module 0x42::SocialNetwork part specifies that the module SocialNetwork will be published under the account address 0x42 in global storage.
+
+Reuse:
+
+  We can reuse modules via imports
+
+  module coin::coin{
+  }
+
+  module defi::escrow{
+    use coin::Coin;
+  }
+
+Publish:
+
+  Multiple modules are bundled together in a single package to publish
+
