@@ -1,0 +1,15 @@
+1. Primitive types:
+
+  * bool
+  * unsigned integers: u8, u16, u32, u64, u128, u256
+  * address: asset owner/tx sender
+
+2. Collection types:
+
+  * vector<T>
+  * Table<K,V>
+
+3. User defined:
+
+  * structs
+
