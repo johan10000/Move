@@ -1,0 +1,27 @@
+1. copy:
+
+struct c has copy { }
+
+We are allowed to copy this struct via reference
+
+2. drop
+
+struct d has drop { }
+
+We are allowed to discard this struct
+
+3. key
+
+struct d has key { }
+
+d is allowed to appear at the top level of global storage
+
+4. store
+
+struct d has drop { }
+
+5. 
+
+struct e has drop { }
+
+"hot potato" must be eliminated in the same transaction that created it
