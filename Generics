@@ -1,0 +1,3 @@
+Generics exist at both compile time and run time
+We can use generics to constraint struct and function definitions
+
